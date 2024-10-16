@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Redis Stream</title>
+</head>
+<body>
+
+<div>
+    <!-- TODO: need to provide session ID as path variable... -->
+    <form action="#" th:action="@{/redis/send/sessionID_1234}" method="post">
+        <label> Publish Message using Redis Stream: </label>
+        <input type="text" name="message" size="100"/> </br>
+<!--
+        <input type="radio" id="html" name="channelNum" value="1">
+        <label for="html">Channel 1</label><br>
+        <input type="radio" id="css" name="channelNum" value="2">
+        <label for="css">Channel 2</label><br> -->
+
+        <button type="submit">Publish Message</button>
+    </form>
+</div>
+
+</body>
+</html>
